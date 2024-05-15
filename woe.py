@@ -136,6 +136,7 @@ for i in feature:
 
 
 res=Woe_IV(rp, features_dis, features_cont, target)
-
-
+# отбор
+useful_features = res[res['IV'] > 0.1]
+display(useful_features)
 
